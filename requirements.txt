@@ -1,0 +1,11 @@
+streamlit>=1.36.0
+pytest>=8.0.0
+langchain>=1.0.0
+mcp>=1.29.0
+langchain-mcp-adapters>=0.3.2
+httpx>=0.28.1
+scikit-learn>=1.5.0
+langchain-openai>=0.3.0
+langchain-community>=0.3.0
+faiss-cpu>=1.8.0
+python-dotenv>=1.0.0
