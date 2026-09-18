@@ -129,16 +129,6 @@ Never commit or share API keys. Rotate any key that has been exposed.
 
 The app opens a Streamlit page with a question field, response spinner, answer, citations, selected tools, MCP payloads, and conversation context.
 
-
-
-## Tests
-
-```powershell
-..\.venv\Scripts\python.exe -m pytest -q
-```
-
-The test suite covers source metadata, semantic retrieval, citations, currency parsing, weather routing, currency routing, combined planning, next-week forecasts, multi-turn context, destination-only intent isolation, unsupported knowledge, and MCP failure handling.
-
 ## Project files
 
 - `app.py` - Streamlit application and conversation state
