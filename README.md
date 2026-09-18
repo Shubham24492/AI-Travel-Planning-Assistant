@@ -146,6 +146,5 @@ The test suite covers source metadata, semantic retrieval, citations, currency p
 - `weather_mcp_server.py` - Weather MCP server
 - `currency_mcp_server.py` - Currency MCP server
 - `knowledge_base/` - cited Singapore travel summaries
-- `tests/` - automated tests
 - `requirements.txt` - Python dependencies
 - `.gitignore` - excludes `.env`, virtual environments, caches, and bytecode
