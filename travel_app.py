@@ -140,19 +140,18 @@ class TravelAssistant:
         self.embedding_model = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
         self.answer_prompt = ChatPromptTemplate.from_messages([
             ("system", """You are a careful Singapore travel assistant.
-Use only the supplied knowledge-base for stable destination facts.
+Use only the supplied knowledge-base excerpts for stable destination facts.
 Use MCP results only for current weather and exchange-rate facts.
-If the excerpts do not contain enough evidence, say so clearly and do not answer from general knowledge.
 Never invent missing facts, prices, opening hours, weather, or currency values.
 Clearly distinguish sourced facts, current MCP data, and your recommendations.
+Use [Source N] citations for knowledge-base claims and mention MCP tool names for live data.
 If a tool result contains an error, say that current data is unavailable instead of guessing.
-For every knowledge-base claim, include its matching [Source N] reference and source URL when available.
 Preserve relevant preferences from the conversation context.
 Structure the answer with these headings when applicable:
-1. Knowledge-base facts with [Source N] references
+1. Knowledge-base facts (cite [Source N])
 2. Current MCP information (name the weather or currency MCP tool)
 3. Recommendation (clearly label generated suggestions)
-Use concise headings and bullets, and include a short limitation note when evidence is incomplete."""),
+Return a concise, practical answer with headings or bullets."""),
             ("human", """Question: {question}
 
 Conversation context:
@@ -259,16 +258,6 @@ MCP results:
         return any(51 <= int(code) <= 99 for code in daily.get("weather_code", []))
 
     @staticmethod
-    def _forecast_day_is_wet(weather, day_index):
-        """Check one forecast day so each itinerary day can use its own alternative."""
-        daily = weather.get("daily", {})
-        probabilities = daily.get("precipitation_probability_max", [])
-        codes = daily.get("weather_code", [])
-        if day_index < len(probabilities) and float(probabilities[day_index] or 0) >= 50:
-            return True
-        return day_index < len(codes) and 51 <= int(codes[day_index]) <= 99
-
-    @staticmethod
     def _parse_currency(question):
         currency_names = {
             "inr": "INR",
@@ -347,31 +336,17 @@ MCP results:
         # Combine stable itinerary guidance with the live forecast when planning a trip.
         if "itinerary" in question_lower or "three-day" in question_lower or "3-day" in question_lower:
             weather = tool_results.get("weather", {})
-            day_one = (
-                "National Gallery Singapore and indoor museum time"
-                if self._forecast_day_is_wet(weather, 0)
-                else "Marina Bay, Merlion Park, and Gardens by the Bay"
-            )
-            day_two = (
-                "Chinatown heritage indoor stops and a hawker-centre lunch"
-                if self._forecast_day_is_wet(weather, 1)
-                else "Chinatown, Kampong Glam, and Little India for heritage and food"
-            )
-            day_three = (
-                "Indoor family attractions or museums"
-                if self._forecast_day_is_wet(weather, 2)
-                else "Sentosa and its beaches"
-            )
+            rainy = self._weather_requires_indoor_plan(weather)
+            day_three = "National Gallery and an indoor museum experience" if rainy else "Sentosa and its beaches"
             answer_parts.append(
-                "Recommendation (generated from retrieved itinerary and transport guidance):\n"
-                f"Day 1: {day_one}.\n"
-                f"Day 2: {day_two}.\n"
-                f"Day 3: {day_three}.\n"
-                "Use the MRT between districts and keep water and an umbrella available."
+                "Recommendation (generated from the retrieved itinerary guidance):\n"
+                "Day 1: Marina Bay, Merlion Park, and Gardens by the Bay.\n"
+                "Day 2: Chinatown, Little India, and Kampong Glam for heritage and food.\n"
+                f"Day 3: {day_three}. Use the MRT between districts and keep an indoor backup for heavy rain."
             )
 
         if tool_results:
-            answer_parts.append("Current information from MCP tools (live data):\n" + json.dumps(tool_results, indent=2))
+            answer_parts.append("Current information from MCP tools:\n" + json.dumps(tool_results, indent=2))
 
         failed_tools = [name for name, result in tool_results.items() if result.get("error")]
         if failed_tools:
@@ -382,7 +357,7 @@ MCP results:
             )
 
         if sources:
-            answer_parts.append("Knowledge-base facts:\n" + "\n\n".join(
+            answer_parts.append("Useful information from the knowledge base:\n" + "\n\n".join(
                 f"{source['title']}:\n{source['text']}" for source in sources
             ))
         else:

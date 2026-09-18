@@ -4,154 +4,115 @@ Question 1: Which neighbourhoods are suitable for cultural experiences?
 
 Application response: 
 
-Neighbourhoods for Cultural Experiences in Singapore
-Chinatown
+Answer
+Knowledge-base facts
+Chinatown: Known for its heritage and food.
+Kampong Glam: Suited for visitors interested in Malay culture, art, and cafes.
+Little India: Offers colorful streets, local food, and shopping.
+Gardens by the Bay and Marina Bay: Suitable for a scenic evening itinerary. [Source 1]
+Current MCP information
+No current data available.
+Recommendation
+For cultural experiences in Singapore, I recommend exploring:
 
-A vibrant area known for its rich heritage, food stalls, and cultural sites such as temples and museums.
-Kampong Glam
-
-Home to the iconic Sultan Mosque and a mix of traditional and modern shops, offering a glimpse into Malay culture.
-Little India
-
-A colorful district filled with Indian shops, restaurants, and cultural landmarks, showcasing the Indian community's heritage.
-Marina Bay
-
-While primarily known for its modern attractions, it also offers cultural experiences through art installations and events.
-These neighbourhoods provide a blend of heritage, shopping, and dining experiences, making them ideal for cultural exploration in Singapore.
-
+Chinatown for its rich heritage and diverse food options.
+Kampong Glam to immerse yourself in Malay culture and enjoy art and cafes.
+Little India for vibrant streets and authentic local cuisine.
+These neighborhoods provide a great mix of cultural experiences and are easily accessible via public transport.
 --------------------------------------------------------------------------------------------------------------------------
 
 Weather MCP question
 
-Question 2: What is the forecast for the next three days?
+Question 2: I have a budget of INR 60,000. Convert it to SGD and suggest a three-day itinerary.
 
 Application response: 
 
-Three-Day Weather Forecast for Singapore
-Day 1: September 18, 2026
-Max Temperature: 32.1°C
-Min Temperature: 26.7°C
-Precipitation Probability: 69% (possible rain, consider indoor options)
-Day 2: September 19, 2026
-Max Temperature: 32.8°C
-Min Temperature: 26.4°C
-Precipitation Probability: 87% (expect rain, plan for indoor dining and shopping)
-Day 3: September 20, 2026
-Max Temperature: 30.2°C
-Min Temperature: 24.4°C
-Precipitation Probability: 88% (high chance of rain, prioritize indoor activities)
-Recommendations
-Carry Water: Stay hydrated in the warm and humid climate.
-Use MRT: Efficient for moving around the city.
-Plan for Rain: Have backup indoor activities ready for rainy days.
-This forecast is based on current data from the MCP Weather Server..
+Answer
+Knowledge-base facts
+Singapore has a warm and humid tropical climate year-round, with occasional heavy rain. It's advisable to check the current forecast before planning outdoor activities, especially during the wet season. [Source 3]
+A suggested three-day itinerary includes:
+Day 1: Marina Bay, Gardens by the Bay, and a sunset view.
+Day 2: Explore Chinatown, Kampong Glam, and Little India with food and cultural stops.
+Day 3: Museums, indoor attractions, or a beach and island experience such as Sentosa. [Source 2]
+Current MCP information
+Currency Conversion: Current exchange rates are not available, so I cannot convert INR 60,000 to SGD at this moment.
+Weather Forecast (from MCP Weather Server):
+September 18: Max temperature 32.4°C, Min temperature 27.1°C, Precipitation probability 84%
+September 19: Max temperature 30.8°C, Min temperature 25.7°C, Precipitation probability 90%
+September 20: Max temperature 30.6°C, Min temperature 25.7°C, Precipitation probability 89%
+Recommendation
+Itinerary Suggestions:
+Day 1: Start at Marina Bay, visit Gardens by the Bay, and enjoy the sunset views.
+Day 2: Explore cultural neighborhoods—Chinatown for heritage and food, Kampong Glam for Malay culture, and Little India for vibrant streets and local cuisine.
+Day 3: Choose between visiting museums, indoor attractions, or relaxing at Sentosa Island.
+Given the high probability of rain on September 19 and 20, consider planning indoor activities or carry an umbrella for outdoor excursions.
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Currency MCP question
 
-Question 3: Convert INR 50,000 to SGD.
+Question 3: Suggest outdoor attractions and replace them with indoor options if rain is expected..
 
 Application response:
 
-Currency Conversion: INR to SGD
-Current Conversion Status: The conversion from INR to SGD is currently unavailable due to an error in retrieving the exchange rate data.
-Recommendations
-You may want to check a reliable currency conversion website or app for the latest rates.
-Consider visiting a local bank or currency exchange service in Singapore for accurate conversion when you arrive..
+Answer
+Knowledge-base facts
+Singapore has a warm and humid tropical climate year-round, with occasional heavy rain. It's advisable to check the current forecast before planning outdoor activities, especially during the wet season. [Source 3]
+A suggested three-day itinerary includes:
+Day 1: Marina Bay, Gardens by the Bay, and a sunset view.
+Day 2: Explore Chinatown, Kampong Glam, and Little India with food and cultural stops.
+Day 3: Museums, indoor attractions, or a beach and island experience such as Sentosa. [Source 2]
+Current MCP information
+Weather Forecast (from MCP Weather Server):
+September 18: Max temperature 32.4°C, Min temperature 27.1°C, Precipitation probability 84%
+September 19: Max temperature 30.8°C, Min temperature 25.7°C, Precipitation probability 90%
+September 20: Max temperature 30.6°C, Min temperature 25.7°C, Precipitation probability 89%
+Recommendation
+Given the high probability of rain on September 19 and 20, I recommend the following adjustments to your itinerary:
+
+Day 1:
+
+Outdoor: Start at Marina Bay, visit Gardens by the Bay, and enjoy the sunset views.
+Day 2:
+
+Indoor: Instead of outdoor exploration, consider visiting the National Museum of Singapore, ArtScience Museum, or the Singapore Science Centre. These indoor attractions will keep you dry while still providing a rich cultural experience.
+Day 3:
+
+Indoor: Focus on indoor activities such as visiting the National Aquarium or shopping at malls with activity zones. If the weather permits, you can still consider a short visit to Sentosa Island, but be prepared for rain.
+Make sure to carry an umbrella for outdoor excursions, especially on the days with high precipitation probabilities.
 
 ------------------------------------------------------------------------------------------------------------------------
 
 Combined RAG and MCP question
 
-Question 4: Create a three-day itinerary for next week and adjust it according to the weather.
+Question 4: Plan a family trip and include the latest weather forecast..
 
 Application response:
 
-Three-Day Itinerary for Singapore
-Overview
-Based on the weather forecast for next week, here’s a suggested itinerary that balances outdoor and indoor activities to accommodate potential rain.
+Answer
+Knowledge-base facts
+Singapore has a warm and humid tropical climate year-round, with occasional heavy rain. It's advisable to check the current forecast before planning outdoor activities, especially during the wet season. [Source 2]
+A suggested three-day itinerary includes:
+Day 1: Marina Bay, Gardens by the Bay, and a sunset view.
+Day 2: Explore Chinatown, Kampong Glam, and Little India with food and cultural stops.
+Day 3: Museums, indoor attractions, or a beach and island experience such as Sentosa. [Source 3]
+Current MCP information
+Weather Forecast (from MCP Weather Server):
+September 18: Max temperature 32.4°C, Min temperature 27.1°C, Precipitation probability 84%
+September 19: Max temperature 30.8°C, Min temperature 25.7°C, Precipitation probability 90%
+September 20: Max temperature 30.6°C, Min temperature 25.7°C, Precipitation probability 89%
+Recommendation
+Given the high probability of rain on September 19 and 20, I recommend the following adjustments to your itinerary:
 
-Weather Forecast
-Day 1 (September 18): Max 32.1°C, Min 26.7°C, 69% chance of rain (possible rain, consider indoor options).
-Day 2 (September 19): Max 32.8°C, Min 26.4°C, 87% chance of rain (expect rain, plan for indoor dining and shopping).
-Day 3 (September 20): Max 30.2°C, Min 24.4°C, 88% chance of rain (high chance of rain, prioritize indoor activities).
-Day 1: Marina Bay and Gardens by the Bay
-Morning: Start at Marina Bay Sands for stunning views and a visit to the SkyPark.
-Afternoon: Explore Gardens by the Bay (indoor Cloud Forest and Flower Dome if it rains).
-Evening: Enjoy the Supertree Grove light show. Consider dining at one of the nearby restaurants.
-Day 2: Cultural Exploration
-Morning: Visit Chinatown for heritage sites and local food. Consider indoor attractions like the Chinatown Heritage Centre.
-Afternoon: Head to Kampong Glam to see the Sultan Mosque and explore shops. If it rains, visit the Malay Heritage Centre.
-Evening: Explore Little India for dinner and vibrant street scenes. Look for indoor dining options if the weather is poor.
-Day 3: Museums and Indoor Attractions
-Morning: Visit the National Museum of Singapore or the Asian Civilisations Museum.
-Afternoon: Explore Sentosa Island (indoor attractions like the SEA Aquarium or Universal Studios if it rains).
-Evening: Relax at a shopping mall like VivoCity or Orchard Road for shopping and dining.
-Recommendations
-Stay Hydrated: Carry water to manage the warm and humid climate.
-Use MRT: Efficient for moving around the city.
-Plan for Rain: Have backup indoor activities ready for rainy days, such as museums or shopping centers.
-This itinerary provides a mix of cultural experiences and indoor options to ensure a pleasant visit despite the weather conditions.
+Day 1:
+
+Outdoor: Start at Marina Bay, visit Gardens by the Bay, and enjoy the sunset views.
+Day 2:
+
+Indoor: Instead of outdoor exploration, consider visiting the National Museum of Singapore, ArtScience Museum, or the Singapore Science Centre. These indoor attractions will keep you dry while still providing a rich cultural experience.
+Day 3:
+
+Indoor: Focus on indoor activities such as visiting the National Aquarium or shopping at malls with activity zones. If the weather permits, you can still consider a short visit to Sentosa Island, but be prepared for rain.
+Make sure to carry an umbrella for outdoor excursions, especially on the days with high precipitation probabilities.
 
 -----------------------------------------------------------------------------------------------------------------------------------
-Context aware question
-
-Question 1: We prefer cultural activities and travel with children.
-
-Application response:
-
-Cultural Activities for Families in Singapore
-Here are some recommended cultural activities suitable for families traveling with children:
-
-Day 1: Marina Bay and Gardens by the Bay
-Morning: Visit Marina Bay Sands for panoramic views and the SkyPark.
-Afternoon: Explore Gardens by the Bay. If it rains, enjoy the indoor Cloud Forest and Flower Dome.
-Evening: Watch the Supertree Grove light show and dine at nearby restaurants.
-Day 2: Cultural Exploration
-Morning: Discover Chinatown. Visit the Chinatown Heritage Centre for a cultural experience.
-Afternoon: Head to Kampong Glam to see the Sultan Mosque and explore local shops. If it rains, visit the Malay Heritage Centre.
-Evening: Explore Little India for vibrant street scenes and local cuisine. Look for indoor dining options if necessary.
-Day 3: Museums and Indoor Attractions
-Morning: Visit the National Museum of Singapore or the Asian Civilisations Museum.
-Afternoon: Spend time at Sentosa Island. If it rains, consider indoor attractions like the SEA Aquarium or Universal Studios.
-Evening: Relax at shopping malls like VivoCity or Orchard Road for shopping and dining.
-Practical Tips
-Stay Hydrated: Carry water to manage the warm and humid climate.
-Use MRT: Efficient for moving around the city.
-Plan for Rain: Have backup indoor activities ready, such as museums or shopping centers.
-Weather Considerations
-Day 1 (September 18): Max 32.1°C, Min 26.7°C, 69% chance of rain.
-Day 2 (September 19): Max 32.8°C, Min 26.4°C, 87% chance of rain.
-Day 3 (September 20): Max 30.2°C, Min 24.4°C, 88% chance of rain.
-This itinerary balances cultural experiences with family-friendly activities, ensuring a pleasant visit despite potential rain.
-
-Question 2: Now make the itinerary weather-aware.
-
-Application response:
-
-Weather-Aware Three-Day Itinerary for Singapore
-Overview
-This itinerary is designed to accommodate the weather forecast for next week, balancing outdoor and indoor activities to ensure a pleasant experience despite potential rain.
-
-Weather Forecast
-Day 1 (September 18): Max 32.6°C, Min 27.1°C, 87% chance of rain (expect rain, plan for indoor options).
-Day 2 (September 19): Max 32.5°C, Min 26.7°C, 69% chance of rain (possible rain, consider indoor activities).
-Day 3 (September 20): Max 31.8°C, Min 27.2°C, 88% chance of rain (high chance of rain, prioritize indoor activities).
-Day 1: Marina Bay and Gardens by the Bay
-Morning: Start at Marina Bay Sands for panoramic views and a visit to the SkyPark.
-Afternoon: Explore Gardens by the Bay. If it rains, enjoy the indoor Cloud Forest and Flower Dome.
-Evening: Watch the Supertree Grove light show and dine at nearby restaurants.
-Day 2: Cultural Exploration
-Morning: Visit Chinatown. Explore the Chinatown Heritage Centre for a cultural experience.
-Afternoon: Head to Kampong Glam to see the Sultan Mosque and explore local shops. If it rains, visit the Malay Heritage Centre.
-Evening: Explore Little India for vibrant street scenes and local cuisine. Look for indoor dining options if necessary.
-Day 3: Museums and Indoor Attractions
-Morning: Visit the National Museum of Singapore or the Asian Civilisations Museum.
-Afternoon: Spend time at Sentosa Island. If it rains, consider indoor attractions like the SEA Aquarium or Universal Studios.
-Evening: Relax at shopping malls like VivoCity or Orchard Road for shopping and dining.
-Recommendations
-Stay Hydrated: Carry water to manage the warm and humid climate.
-Use MRT: Efficient for moving around the city.
-Plan for Rain: Have backup indoor activities ready, such as museums or shopping centers.
-This itinerary provides a mix of cultural experiences and family-friendly activities, ensuring a pleasant visit despite the weather conditions. For more information on activities, you can visit Visit Singapore [Source 2].
